@@ -1,0 +1,110 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and layout */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f4f8; /* Light background color */
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Profile Card Styles */
+.profile-card {
+    background-color: #615e5e; /* White card background */
+    padding: 40px;
+    border-radius: 20px;
+    width: 380px; /* Increased width for more space */
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1); /* Soft shadow for a floating effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 5px solid #3772ff; /* Blue border around profile image */
+}
+
+.profile-details h2 {
+    color: #f7efef; /* Dark color for name */
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.username {
+    color: #fcfcfc;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Social Media Icons */
+.social-icons {
+    margin-bottom: 25px;
+}
+
+.social-icon {
+    color: #eef0f7;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #3772ff; /* Blue color on hover */
+    transform: translateY(-5px);
+}
+
+/* Follow Button */
+.follow-btn {
+    background-color: #3772ff; /* Blue background */
+    border: none;
+    color: #fff;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+}
+
+.follow-btn:hover {
+    background-color: #5587ff; /* Lighter blue on hover */
+}
+
+.follow-btn:focus {
+    outline: none;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+    .profile-card {
+        width: 90%; /* Make card smaller on small screens */
+        padding: 25px;
+    }
+
+    .profile-image img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .social-icon {
+        font-size: 1.3rem;
+    }
+}
